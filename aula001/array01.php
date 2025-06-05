@@ -26,3 +26,19 @@ $alunos = [
 
 echo "A idade do aluno Mikael e: " . $alunos["Mikael"] . " anos " . "\n";
 
+#exercicio 03
+#1. crie um array chamado $cores contendo tres cores.
+#2. adicione uma nova cor ao final do array
+#3. remova a primeira cor do array.
+#4. imprima o array resultante
+
+$cores = ['azul', 'vermelho', 'branco']; //tres cores em um array
+$cores[] = 'verde'; // essa sera adicionada no final do array
+
+array_shift($cores); //essa funcao esta tirando o primeiro item do array
+
+print_r ($cores); // e aqui esta imprimindo o array completo sem a cor azul no comeco
+//e com a cor verde no final.
+
+echo "As cores sao: " . implode(", ", $cores) . "\n";
+//imprime de forma uma ao lado da outra.
