@@ -42,3 +42,37 @@ print_r ($cores); // e aqui esta imprimindo o array completo sem a cor azul no c
 
 echo "As cores sao: " . implode(", ", $cores) . "\n";
 //imprime de forma uma ao lado da outra.
+
+#exercicio 04
+#crie um array associativo  chamado $precos onde as chaves sao
+#nomes de produtose os valores sao seus precos.
+#atualize o preco de um dos produtos adicionando + R$ 10,00.
+#atualize o preco do primeiro produto reduzindo R$ 1,00
+#imprima o array resultante
+
+
+// 1. Crie um array associativo chamado $precos
+$precos = [
+    "Notebook" => 2500.00,
+    "Celular" => 1200.00,
+    "Tablet" => 800.00
+];
+
+// 2. Atualize o preço de um produto específico (+R$ 10,00)
+$precos["Celular"] += 10.00;
+
+// 3. Atualize o preço do primeiro produto (-R$ 1,00)
+$primeiroProduto = array_key_first($precos);
+$precos[$primeiroProduto] -= 1.00;
+
+// 4. Imprima o array resultante
+echo "Preços atualizados:\n";
+print_r($precos);
+
+// Versão alternativa para imprimir formatado:
+/*
+echo "\nPreços atualizados (formatado):\n";
+foreach ($precos as $produto => $preco) {
+    echo "$produto: R$ " . number_format($preco, 2, ',', '.') . "\n";
+}
+*/
