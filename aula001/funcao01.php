@@ -1,6 +1,6 @@
 <?php
 $numero1 = 110;
-$numero2 = 20;
+$numero2 = 220;
 
 function operacaoMatematica(int $numero1, int $numero2, string $operacao): float
 {
@@ -9,7 +9,6 @@ function operacaoMatematica(int $numero1, int $numero2, string $operacao): float
         'subtracao' => $numero1 - $numero2,
         'divisao' => $numero1 / $numero2,
         'multiplicacao' => $numero1 * $numero2,
-        default => throw new InvalidArgumentException("Operação inválida: " . $operacao),
     };
 }
 
