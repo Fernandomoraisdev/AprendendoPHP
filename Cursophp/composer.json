@@ -1,0 +1,17 @@
+{
+    "name": "fernandomorais/cursophp",
+    "description": "Curso completo  sobre poo com php",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Fernandomorais\\Cursophp\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Fernando Morais",
+            "email": "fernandomoraisdev@gmail.com"
+        }
+    ],
+    "require": {}
+}
