@@ -1,22 +1,10 @@
 <?php
 class PessoaFisica
 {
-  //aqui fica as propriedades e os metodos.
-    public $name;
-
-    /**
-     * @return mixed
-     */
-    public function getName()
-    {
-        return $this->name;
-    }
-
-    /**
-     * @param mixed $name
-     */
-    public function setName($name): void
-    {
-        $this->name = $name;
-    }
+    //aqui ofica as propriedades e metodos.
+    public $nome;
 }
+
+$pessFisica = new PessoaFisica();
+
+echo "Sera interpretado e imprimito pelo PHP";
