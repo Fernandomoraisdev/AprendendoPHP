@@ -1,4 +1,4 @@
 <?php
-$carro = "sandero"
+$carro = "sandero";
 
     echo "eu tenho um carro $carro";
